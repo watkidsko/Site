@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+}
+
+nav a {
+    font-family: 'Lobster', cursive;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.content {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    margin: 20px 0; /* Margin around the grid */
+}
+
+.project-card {
+    position: relative; /* Position relative for absolute positioning of the image */
+    overflow: hidden; /* Hide overflow to keep the image within the card */
+    background: rgba(255, 255, 255, 0.9); /* Light background for project cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for project cards */
+    padding: 15px; /* Padding inside project cards */
+    text-align: center; /* Center text */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.project-image {
+    position: absolute; /* Position the image absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the card area */
+    opacity: 0.3; /* Make the image semi-transparent */
+    transition: opacity 0.3s; /* Transition for hover effect */
+}
+
+.project-card:hover .project-image {
+    opacity: 0.5; /* Increase opacity on hover */
+}
+
+.project-card h3, .project-card p {
+    position: relative; /* Position text above the image */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
