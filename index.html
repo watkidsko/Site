@@ -13,6 +13,10 @@
             background: linear-gradient(to bottom, blue, teal, purple, red);
             color: white; /* Text color for better contrast */
             font-family: 'Lobster', cursive; /* Default font */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
         }
         header {
             text-align: center;
@@ -26,6 +30,10 @@
             margin: 0 15px;
             color: white; /* Link color */
             text-decoration: none;
+            font-size: 18px; /* Increase font size for better visibility */
+        }
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover for better UX */
         }
         .content {
             text-align: center;
@@ -40,14 +48,14 @@
 </header>
 
 <nav>
-    <a href="pages/about.html">About</a>
-    <a href="pages/experience.html">Experience</a>
-    <a href="pages/skills.html">Skills</a>
-    <a href="pages/awards.html">Awards</a>
-    <a href="pages/education.html">Education</a>
-    <a href="pages/contact.html">Contact</a>
-    <a href="pages/resume.html">Resume</a>
-    <a href="projects/projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="experience.html">Experience</a>
+    <a href="skills.html">Skills</a>
+    <a href="awards.html">Awards</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
 </nav>
 
 <div class="content">
